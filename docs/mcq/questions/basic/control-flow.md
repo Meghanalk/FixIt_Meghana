@@ -492,26 +492,37 @@ answer="They can lead to complex code"
 />
 
 <Question
-question="48). What is the output?"
-code={`int x = 10; if (x > 5); { 
-        cout << "Yes"; }`}
-options={['Yes', 'No output', 'Compilation error', 'Runtime error']}
-answer="Yes"
+question="48).What is the output of this for loop with a goto?"
+code={`for (int i = 0; i < 3; i++) {
+    if (i == 1) goto end;
+    cout << i;
+}
+end:
+cout << "Done";}`}
+options={['0 Done','0 1 Done','1 2 Done','Compilation error']}
+answer="0 Done"
 />
 
 <Question
-question="49). How many times is the condition checked in this loop?"
-code={`int i = 0;   
-      while (i++ < 3) { 
-      cout << i; }`}
-options={['2', '3', '4', '1']}
-answer="4"
+  question="49). Which of the following is NOT a control flow statement in C++?"
+  options={[
+    'if',
+    'for',
+    'switch',
+    'int'
+  ]}
+  answer="int"
 />
 
+
 <Question
-question="50). What is the output?"
-code={`int x = 0; 
-      cout << (x = 5 ? "A" : "B");}`}
-options={['A', 'B', '0', '5']}
-answer="A"
+  question="50). What type of control flow statement is used to make decisions based on conditions?"
+  options={[
+    'loop statement',
+    'conditional statement',
+    'function call',
+    'class declaration'
+  ]}
+  answer="conditional statement"
 />
+
