@@ -436,3 +436,82 @@ question="40). Which control flow structure is missing in C++?"
 options={['unless', 'until', 'elif', 'Both A and B']}
 answer="Both A and B"
 />
+
+<Question
+question="41). What is the output?"
+code={`int i = 1; 
+      do { cout << i; } 
+      while (i++ < 1);}`}
+options={['1', '01', '11', 'Infinite loop']}
+answer="11"
+/>
+
+
+<Question
+question="42). What is the output?"
+code={`int i = 5; 
+        while (i) { 
+          if (i-- == 3) 
+          break; 
+          cout << i << " "; }`}
+options={['4 3', '4', '5 4', '5 4 3']}
+answer="4"
+/>
+
+<Question
+question="43). Which is NOT a valid loop exit condition?"
+options={['for (;;)', 'while (1)', 'do {...} while (true)', 'for (int i=0; i=5; i++)']}
+answer="for (int i=0; i=5; i++)"
+/>
+
+<Question
+question="44). What is the output?"
+code={`int a = 1, b = 2; 
+      if (a > b ? a : b) 
+        cout << "True";}`}
+options={['True', 'False', 'Compilation error', 'No output']}
+answer="True"
+/>
+
+<Question
+question="45). Which loop is most suitable for processing a menu-driven program?"
+options={['for', 'while', 'do-while', 'switch']}
+answer="do-while"
+/>
+
+<Question
+question="46). Which is NOT a valid label for goto?"
+options={['start:', 'case1:', '123:', '_loop:']}
+answer="123:"
+/>
+
+<Question
+question="47). Which statement about nested switches is true?"
+options={['They are not allowed', 'They must have the same case values', 'They can lead to complex code', 'They only work with enums']}
+answer="They can lead to complex code"
+/>
+
+<Question
+question="48). What is the output?"
+code={`int x = 10; if (x > 5); { 
+        cout << "Yes"; }`}
+options={['Yes', 'No output', 'Compilation error', 'Runtime error']}
+answer="Yes"
+/>
+
+<Question
+question="49). How many times is the condition checked in this loop?"
+code={`int i = 0;   
+      while (i++ < 3) { 
+      cout << i; }`}
+options={['2', '3', '4', '1']}
+answer="4"
+/>
+
+<Question
+question="50). What is the output?"
+code={`int x = 0; 
+      cout << (x = 5 ? "A" : "B");}`}
+options={['A', 'B', '0', '5']}
+answer="A"
+/>
